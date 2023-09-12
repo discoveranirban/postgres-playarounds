@@ -5,7 +5,7 @@ pool
   .connect({
     host: 'localhost',
     port: 5432,
-    database: 'socialnetworktwo',
+    database: 'socialnetwork-testdb',
     user: 'yashadhara',
     password: '',
   })
