@@ -46,6 +46,12 @@ class Context {
         return new Context(roleName);
     }
 
+    async reset() {
+        return pool.query(`
+            DELETE FROM users;
+        `);
+    }
+
     async close() {
         await pool.close();
 
